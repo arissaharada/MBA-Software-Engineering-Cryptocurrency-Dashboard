@@ -1,0 +1,266 @@
+/* Estilo geral do dashboard-site */ 
+body { 
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: #030712; 
+} 
+ 
+/* Menu Lateral*/ 
+.sidebar { 
+    width: 15%; 
+    height: 100%; 
+    background-color: #111828; 
+    position: fixed; 
+    top: 1rem; 
+    left: 2rem; 
+    bottom: 1rem; 
+    z-index: 1; 
+    overflow-y: auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding-top: 20px; 
+    border-radius: 1cap; 
+} 
+ 
+.sidebar-header { 
+    text-align: center; 
+    margin-bottom: 20px; 
+    padding-top: 10%; 
+} 
+ 
+.sidebar-header img { 
+    width: 4.9rem 
+} 
+ 
+.sidebar-header h2 { 
+    color: white; 
+    margin-top: 20px; 
+    font-size: 2rem; 
+    font-family: 'Monaco', Monaco, monospace; 
+} 
+ 
+.nav-link { 
+    display: flex; 
+    align-items: center; 
+    width: 90%; 
+    padding: 10px 15px; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+    font-family: 'Monaco', Monaco, monospace; 
+} 
+ 
+.nav-link:hover { 
+    background-color: #7DEDFF; 
+    color: black; 
+    width: 80%; 
+    font-family: 'Monaco', Monaco, monospace; 
+    font-style: oblique; 
+} 
+ 
+.nav-link.active { 
+    background-color: #F32B81; 
+    color: white; 
+    width: 80%; 
+} 
+ 
+.nav-icon { 
+    margin-right: 10px; 
+} 
+ 
+/* Estilo do cabeçalho */
+.header {
+    height: 100px;
+	background-color: #A754FC; 
+    display: flex; 
+    line-height: 40px; 
+    font-size: 24px; 
+    border-radius: 1cap;  
+    padding: 20px; 
+    margin: 15px 15px; 
+    position: relative; 
+    left: 20%; 
+    width: 95%; 
+    color: #f5f5f5;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center; 
+    font-family: 'Monaco', Monaco, monospace; 
+}
+ 
+/* Ajuste do conteúdo principal para compensar o header */ 
+.content { 
+    padding: 20px; 
+    min-height: calc(100vh - 60px); /* Altura total menos o header */ 
+} 
+ 
+/* Ajuste para títulos */ 
+.dash-title { 
+    margin-bottom: 15px; 
+    color: #F32B81; 
+} 
+ 
+/* Containers da página Dashboard*/ 
+.row-container { 
+    display: flex; 
+    justify-content: space-between; 
+    background-color: #111828; 
+    border-radius: 1cap;  
+    padding: 20px; 
+    margin-bottom: 30px; 
+    position: relative; 
+    left: 20%; 
+    width: 97%; 
+    box-sizing: border-box;
+} 
+ 
+/* Container para Linha 1 */ 
+/* Filtros */ 
+.filter-container { 
+    width: 17%; 
+    margin-right: 3%; /* Margem entre filtros e gráfico */ 
+    background-color: #f0e8e8; 
+    border-radius: 1cap; 
+    padding: 15px; 
+} 
+ 
+/* Gráfico de Preços */ 
+.chart-container { 
+    width: 48%; /* Gráfico ocupa 40% menos margens */ 
+    margin-right: 3%; /* Margem entre gráfico e narrativas */ 
+    background-color: #f0e8e8; 
+    border-radius: 1cap; 
+    padding: 15px; 
+} 
+ 
+/* Narrativas */ 
+.narratives-container { 
+    width: 27%; /* Narrativas ocupam 30% menos margens */ 
+    background-color: #f0e8e8; 
+    border-radius: 1cap; 
+    padding: 15px; 
+} 
+ 
+/* Gráfico de Volume */ 
+.volume-container { 
+    width: 37%; /* Gráfico ocupa 37% da largura */ 
+    margin-right: 3%; /* Margem entre o gráfico e o próximo container */ 
+    background-color: #f0e8e8; 
+    border-radius: 1cap; 
+    padding: 15px; 
+} 
+ 
+/* Container de Notícias */ 
+.news-container { 
+    width: 27%; /* Notícias ocupam 27% da largura */ 
+    margin-right: 3%; /* Margem entre notícias e o próximo container */ 
+    background-color: #f0e8e8; 
+    border-radius: 1cap; 
+    padding: 15px; 
+} 
+ 
+/* Estatísticas de Volume (tabela) */ 
+.stats-container { 
+    width: 58%; /* Estatísticas ocupam 27% da largura */ 
+    background-color: #f0e8e8; 
+    border-radius: 1cap; 
+    padding: 15px; 
+    margin-right: 0; /* Último elemento sem margem extra à direita */ 
+} 
+ 
+/* Espaço entre os containers (para manter a distância entre gráficos e 
+estatísticas) */ 
+.space-between { 
+    width: 3%; /* Espaço de 3% entre os containers */ 
+} 
+ 
+/* Estilo para a tabela de estatísticas */ 
+.styled-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 25px 0; 
+    font-size: 16px; 
+    font-family: 'Arial', sans-serif; 
+    color: #ffffff; 
+    text-align: left; 
+    background-color: #1c2331; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); 
+} 
+ 
+.styled-table th { 
+    background-color: #111828; /* Cor de fundo para o cabeçalho */ 
+    color: #ffffff; 
+    font-weight: bold; 
+    padding: 12px 15px; 
+    text-align: center; 
+    border-bottom: 2px solid #444444; /* Separação entre cabeçalho e 
+corpo */ 
+} 
+ 
+.styled-table td { 
+    padding: 12px 15px; 
+    text-align: center; 
+    border-bottom: 1px solid #444444; /* Linhas horizontais entre as 
+células */ 
+} 
+ 
+.styled-table tr:hover { 
+    background-color: #575757; /* Destaque na linha ao passar o mouse */ 
+} 
+ 
+.styled-table tr:last-of-type { 
+    border-bottom: 2px solid #111828; /* Última linha com borda destacada 
+*/ 
+} 
+ 
+/* Estilizando página Home e página de Dataset*/ 
+.title{ 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #F85242; 
+    margin-bottom: 15px;  
+    text-align: left; 
+} 
+ 
+.content-text{ 
+    color: white; 
+    font-size: 20px; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+    margin-bottom: 15px; 
+    line-height: 1.2; 
+    text-align: justify 
+} 
+ 
+/* Estilo para o container geral do conteúdo */ 
+.content-container { 
+    display: flex; 
+    flex-direction: column;  /* Garante que o conteúdo fique empilhado 
+verticalmente */ 
+    width: 100%; 
+} 
+ 
+/* Estilo para a tabela, garantindo que ocupe toda a largura da tela */ 
+.dash-table-container { 
+    margin: 25px 0; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); 
+    border-radius: 8px; 
+    background-color: #1c2331; 
+    width: 100%; 
+} 
+ 
+/* Para garantir que a tabela ocupe 100% da largura disponível */ 
+.styled-table { 
+    width: 70%; 
+    margin-top: 20px;  /* Ajuste de margens para melhor disposição */ 
+} 
+
+/* Estilo para justificar a coluna de valores à esquerda */
+.styled-table td:nth-child(2) {
+    text-align: left;
+}
