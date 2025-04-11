@@ -1,4 +1,4 @@
-# MBA-Software-Engineering-Cryptocurrency-Dashboard
+# Cryptocurrency Dashboard
 
 ## 💹 Plataforma Interativa de Análise de Criptomoedas
 
