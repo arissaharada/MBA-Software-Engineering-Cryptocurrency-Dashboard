@@ -8,7 +8,7 @@ caminho_pasta = os.path.expanduser("~/Desktop/CryptoDashboard/raw/")
 os.makedirs(caminho_pasta, exist_ok=True)  # cria a pasta se não existir
 
 # Chave da API
-API_KEY = '0XJctiefZwWbOzWzCSH_D2ejlJ_zZWqw'  # Substitua pela sua chave da API
+API_KEY =  # Substitua pela sua chave da API
 
 # Período desejado
 START_DATE = "2022-07-01"  # Data de início
